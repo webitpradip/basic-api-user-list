@@ -38,7 +38,7 @@ RUN `php artisan db:seed`
 RUN `php artisan serve`
 
 
-Now test the api in postman
+Now test the api in postman using get method
 
 http://127.0.0.1:8000/api/user
 

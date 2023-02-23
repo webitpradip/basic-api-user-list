@@ -17,14 +17,14 @@ class UserController extends Controller
             $output['status']   = 200;
             $output['msg']      = "Record successfully listed";
             $users              = User::select('name','email')->get()->toArray();
-            $output['data']     = $users;
+            $output['data']['users']     = $users;
             return response()->json($output);
 
         }catch(\Exception $e){
 
             $output['status']   = 412;
             $output['msg']      = "Record listing failed";
-            $output['data']     = [];
+            $output['data']['users']     = [];
             return response()->json($output);
         }
     }
