@@ -29,11 +29,13 @@ write down your mysql datbase name and password in .env file
 
 open console inside the folder basic-api-user-list
 
-RUN php artisan migrate
+RUN `composer install`
 
-RUN php artisan db:seed
+RUN `php artisan migrate`
 
-RUN php artisan serve
+RUN `php artisan db:seed`
+
+RUN `php artisan serve`
 
 
 Now test the api in postman
