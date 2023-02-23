@@ -24,7 +24,7 @@ create a database in mysql
 
 copy .env.example file as .env
 
-write down your mysql datbase name and password in .env file
+write down your mysql database name, username and password in .env file
 
 
 open console inside the folder basic-api-user-list
