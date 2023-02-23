@@ -15,7 +15,7 @@ class UserController extends Controller
         try{
 
             $output['status']   = 200;
-            $output['msg']   = "Record successfully listed";
+            $output['msg']      = "Record successfully listed";
             $users              = User::select('name','email')->get()->toArray();
             $output['data']     = $users;
             return response()->json($output);
@@ -23,7 +23,7 @@ class UserController extends Controller
         }catch(\Exception $e){
 
             $output['status']   = 412;
-            $output['msg']   = "Record listing failed";
+            $output['msg']      = "Record listing failed";
             $output['data']     = [];
             return response()->json($output);
         }
